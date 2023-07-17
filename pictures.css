@@ -1,0 +1,95 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  /* Определяем анимацию */
+  @keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+      }
+    100% {
+        background-position: 100% 0%;
+    }
+  }
+
+  /* Задаем стили для фона */
+  .container {
+    background: linear-gradient(45deg, #54036d, rgb(22, 2, 94), #03038b, rgb(3, 100, 11));
+    background-size: 300% 300%; /* Увеличить размер, чтобы создать более плавную анимацию */
+    animation: gradient-animation 10s ease infinite alternate; /* Продолжительность, плавность и бесконечность анимации */
+  }
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 64px;
+    color: white;
+}
+
+p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    color: rgb(255, 215, 255);
+}
+
+.pictures {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 70%;
+    height: 70%;
+    margin-left: 200px;
+}
+
+.picture {
+    flex: 1;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0,8 ease;
+    border-radius: 5px;
+}
+
+.picture:hover {
+    flex: 7;
+}
+
+.picture-1 {
+    background-image: url(pictures-skyrim/1.jpg);
+}
+
+.picture-2 {
+    background-image: url(pictures-skyrim/2.jpg);
+}
+
+.picture-3 {
+    background-image: url(pictures-skyrim/3.jpg);
+}
+
+.picture-4 {
+    background-image: url(pictures-skyrim/4.jpg);
+}
+
+.picture-5 {
+    background-image: url(pictures-skyrim/5.jpg);
+}
+
+.picture-6 {
+    background-image: url(pictures-skyrim/6.jpg);
+}
